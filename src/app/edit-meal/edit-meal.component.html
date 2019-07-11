@@ -1,0 +1,29 @@
+<div *ngIf="childSelectedMeal" class="text-align center ">
+    <h2>Edit and Make Changes</h2>
+
+    <div >
+      <label>Meal:</label>
+
+        <input [(ngModel)]="childSelectedMeal.name">
+    </div>
+    <div >
+      <label>Description:</label>
+      <div>
+        <input [(ngModel)]="childSelectedMeal.description" >
+      </div>
+    </div>
+    <div>
+      <label >Calories:</label>
+      <div>
+        <input  [(ngModel)]="childSelectedMeal.calories">
+      </div>
+    </div>
+
+    <div>
+      <div >
+
+        <br>
+        <button (click)="DoneClicked()" class="btn btn-primary">Done</button>
+      </div>
+    </div>
+</div>
